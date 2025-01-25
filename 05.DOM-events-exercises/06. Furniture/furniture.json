@@ -1,0 +1,15 @@
+[
+    {
+        "img":"https://www.boconcept.com/on/demandware.static/-/Sites-master-catalog/default/dw736adf25/images/1560000/1560164.jpg",
+        "name": "Sofa",
+        "price": "259",
+        "decFactor":"0.4"
+
+    },
+    {
+        "img":"https://www.bludot.com/media/catalog/product/s/h/sh1_cabnet_sk.2x_1_ipad_1.jpg?optimize=medium&fit=bounds&height=1200&width=1500&canvas=1500:1200",
+        "name": "Wardrobe",
+        "price": "120",
+        "decFactor":"1.2"
+    }
+]

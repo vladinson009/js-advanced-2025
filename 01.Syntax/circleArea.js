@@ -1,0 +1,10 @@
+function solve(input) {
+  const typeOfArg = typeof input;
+  if (typeOfArg == 'number') {
+    result = Math.pow(input, 2) * Math.PI;
+    console.log(result.toFixed(2));
+  } else {
+    console.log(`We can not calculate the circle area, because we receive a ${typeOfArg}.`);
+  }
+}
+solve(5);
