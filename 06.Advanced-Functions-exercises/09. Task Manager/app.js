@@ -1,4 +1,4 @@
-function solve() {
+function solve1() {
   const wrapper = document.querySelector('div.wrapper');
   const [, openSection, progressSection, completeSection] = document.querySelectorAll('section');
   const inputTask = document.getElementById('task');
@@ -13,7 +13,7 @@ function solve() {
     Delete: onDelete,
     Finish: onFinish,
   };
-  // * cliclHandler
+  // * clickHandler
   function onClick(e) {
     e.preventDefault();
     const clickedBtn = e.target;
@@ -39,7 +39,6 @@ function solve() {
     const div = el('div', { className: 'flex' }, [startBtn, deleteBtn]);
 
     const article = el('article', {}, [h3, description, date, div]);
-    console.log(openSection.children[1]);
 
     openSection.children[1].appendChild(article);
     document.querySelector('form').reset();
