@@ -37,7 +37,6 @@ function solution() {
     constructor(name, age) {
       super(name, age);
       this.dividend = 0;
-      this.salary = 0;
       this.tasks = [
         `${this.name} scheduled a meeting.`,
         `${this.name} is preparing a quarterly report.`,
