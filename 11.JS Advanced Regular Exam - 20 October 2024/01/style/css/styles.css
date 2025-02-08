@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+body {
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+   font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10vh;
+  text-shadow: 5px 5px black;
+  color: rgb(255, 255, 255);
+  margin-top: -2px;
+}
+body > h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vh;
+  text-shadow: 1px 2px black;
+  color: rgb(255, 255, 255);
+  margin-top: -40px; 
+  margin-bottom: 34px;
+  background-color: #0f0c1f8d;
+  padding: 4px 20px;
+border-bottom-left-radius: 40px;
+border-top-right-radius: 40px;
+}
+
+#content {
+  margin-top: -20px;
+}
+.activity-form {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #0f0c1f8d;
+  padding: 20px 0px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+#input-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.activity-form input,
+.activity-form button {
+  width: 10rem;
+  height: 1.6rem;
+}
+
+.activity-form select {
+  width: 10rem;
+  height: 1.6rem;
+}
+
+input::placeholder{
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-container button{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+   font-family: "Permanent Marker", cursive;
+}
+
+.delete-btn{
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+   font-family: "Permanent Marker", cursive;
+  font-size: 11px;
+}
+
+.edit-btn:hover{
+  background-color: green;
+  color: white;
+}
+.next-btn:hover{
+  background-color: green;
+  color: white;
+}
+.delete-btn:hover{
+  background-color: green;
+  color: white;
+}
+
+.confirm-btn{
+  height: 140px;
+  width: 140px;
+  border-radius: 100%;
+  background-image: url(../images/wheel.png);
+  background-position: center;
+background-size:cover ;
+color: rgb(70, 216, 123);
+text-shadow: 2px 2px black;
+font-size: 20px;
+font-weight: 700;
+}
+
+.confirm-btn:hover{
+scale: 1.3;
+}
+
+#add-activity {
+background-image: url(../images/btn-img.png);
+background-position: center;
+background-size:cover ;
+height: 60px;
+width: 90px;
+border-radius: 10px;
+color: transparent;
+}
+
+#add-activity:hover {
+scale: 1.2;
+}
+
+#add-activity:disabled {
+  cursor: not-allowed;
+  scale: 1;
+  box-shadow: rgba(255, 0, 0, 0.692) 30px 30px 30px 32px inset;
+}
+
+.back-btn {
+  width: 15vw;
+  height: 10vh;
+  cursor: pointer;
+  font-size: 28px;
+  margin-top: -37px;
+}
+
+
+
+.data-view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.data-view li {
+  background-color: #0f0c1f9a;
+  color: white;
+  width: 40vw;
+  height: 20vh;
+  display: flex;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  border-radius: 20px;
+  margin-top: -50px;
+}
+
+.data-view li article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 40px;
+  flex-wrap: wrap;
+}
+
+.purchase  p {
+  margin: 0;
+  font-size: 13px;
+}
+form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+label{
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .data-view li {
+    width: 50vw;
+    height: 90vh;
+  
+  }
+
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+  background-color: #0ee460;
+}
+
+tr:hover {
+  background-color: #ec0707;
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/styles.css" />
+    <title>Active Minutes</title>
+  </head>
+  <body class="body">
+    <h1>Active Minutes</h1>
+    <h4>Track Your Daily Activity</h4>
+    <main id="content">
+      <div class="form-container">
+        <form class="activity-form">
+          <label for="type">Activity Type:</label>
+          <select id="type" name="type">
+            <option value="" disabled selected>Chose Type</option>
+            <option value="Running">Running</option>
+            <option value="Yoga">Yoga</option>
+            <option value="Cycling">Cycling</option>
+            <option value="Dancing">Dancing</option>
+          </select>
+          <label for="intensity">Intensity:</label>
+          <select id="intensity" name="intensity">
+            <option value="" disabled selected>Chose Intensity</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+            <option value="Extreme">Extreme</option>
+          </select>
+          <label for="calories">Calories Burned:</label>
+          <input
+            type="number"
+            id="calories"
+            name="calories"
+            placeholder="Estimate calories"
+          />
+          <label for="duration">Duration in Minutes:</label>
+          <input
+            type="number"
+            id="duration"
+            placeholder="Duration"
+            name="duration"
+          />
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" placeholder="Date" />
+        </form>
+        <button id="add-activity">Add Activity</button>
+      </div>
+
+      <div class="data-view">
+        <div class="preview">
+          <ul id="preview-activity"></ul>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Activity Type</th>
+              <th>Duration (mins)</th>
+              <th>Calories Burned</th>
+              <th>Date</th>
+              <th>Intensity</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="activities-table"></tbody>
+        </table>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
