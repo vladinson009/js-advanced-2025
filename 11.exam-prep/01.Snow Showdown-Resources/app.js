@@ -68,10 +68,10 @@ function solve() {
   }
   function onEdit(name, height, location, creator, attribute, liElement) {
     nameInput.value = name;
-    (heightInut.value = height),
-      (locationInput.value = location),
-      (creatorInput.value = creator),
-      (attributesInput.value = attribute);
+    heightInut.value = height;
+    locationInput.value = location;
+    creatorInput.value = creator;
+    attributesInput.value = attribute;
     liElement.remove();
     addBtn.disabled = false;
   }
