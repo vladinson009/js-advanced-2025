@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Winter Perfumes</title>
+</head>
+
+<body>
+    <section id="header">
+        <h1>Winter Perfumes</h1>
+    </section>
+
+    <div id="wrapper">
+        <section id="form-section">
+            <div class="container">              
+                <h1>Preferences</h1>
+                
+                <div class="container-form">
+                    <form action="">
+                        <label for="scent-type">Preferred Scent Type:</label>
+                        <select name="scent-type" id="scent-type">
+                            <option value=""></option>
+                            <option value="Woody">Woody</option>
+                            <option value="Spicy">Spicy</option>
+                            <option value="Oriental">Oriental</option>
+                            <option value="Sweet">Sweet</option>
+                            <option value="Floral">Floral</option>
+                        </select>
+                        <label for="budget">Budget:</label>
+                        <input type="number" id="budget" name="budget" pattern="\d{4}">
+
+                        <label for="occasion">Occasion:</label>
+                        <input type="text" id="occasion" name="occasion">
+
+                        <label for="brand">Brand Preference:</label>
+                        <input type="text" id="brand" name="brand" >
+
+                        <label for="skin-type">Skin Type:</label>
+                        <select name="skin-type" id="skin-type">
+                            <option value=""></option>
+                            <option value="Oily">Oily</option>
+                            <option value="Dry">Dry</option>
+                            <option value="Normal">Normal</option>
+                            <option value="Sensitive">Sensitive</option>
+                        </select>
+                        <button id="next-btn" type="submit">Next</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="perfume-info">
+            <div class="info-container">
+                <div class="container"> 
+                <h1>Your Preferences</h1>
+                <ul class="preference-list"></ul>
+            </div>
+            </div>
+        </section>
+
+        <section id="confirm-preference">
+            <div class="confirm-container">
+                <div class="container"> 
+                <h1>Confirm Preferences</h1>
+                <ul class="confirm-list"></ul>
+            </div>
+            </div>
+        </section>
+    </div>
+    <section id="share-preference">
+        <p id="thanks-text"></p>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
